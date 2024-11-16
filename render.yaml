@@ -1,7 +1,7 @@
-services:
-  - type: web
-    name: my-web-service
-    env: python
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "python app.py"
-    autoDeploy: true
+type: web
+name: Real-ESRGAN-Service
+env: python
+entrypoint: gunicorn app:app
+buildCommand: pip install -r requirements.txt
+startCommand: gunicorn app:app
+
