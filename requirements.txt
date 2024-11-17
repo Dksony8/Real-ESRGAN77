@@ -9,8 +9,8 @@ torchvision==0.15.2
 tqdm
 flask             
 gunicorn          
-flask-cors        
- 
+flask-cors       
+realesrgan==0.3.0
 
 
 
